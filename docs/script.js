@@ -1,5 +1,5 @@
 function mostraCommento() {
-    document.getElementById('commento').style.display = 'inline';
+    document.getElementById('commento').style.display = 'block';
   
   }
   

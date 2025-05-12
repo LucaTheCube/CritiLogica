@@ -183,6 +183,18 @@
     color: var(--text-dark);
     padding-bottom: 5%;
   }
+  .destraCommento{
+    border: 2px solid var(--footer-gray);
+    border-radius: 5px;
+    padding: 1%;
+    margin: 20%;
+    margin-left: 0;
+    color: var(--text-dark);
+    
+  }
+  .pagina_titolo{
+    margin-bottom: 2%;
+  }
     /* componente che permette collegamento a margine della spiegazione della parola */
     .spiega{
       text-decoration: underline;
@@ -367,6 +379,20 @@
     color: var(--text-dark);
     padding-bottom: 5%;
     }
+
+   
+      .destraCommento{
+        border: 2px solid var(--footer-gray);
+        border-radius: 5px;
+        padding: 1%;
+        margin: 20%;
+        margin-left: 0;
+        color: var(--text-dark);
+        
+    }
+    .pagina_titolo{
+      margin-bottom: 2%;
+    }
       /* componente che permette collegamento a margine della spiegazione della parola */
       .spiega{
         text-decoration: underline;
@@ -534,7 +560,7 @@ background: linear-gradient(180deg,rgba(10, 10, 143, 1) 39%, rgba(19, 28, 99, 1)
       display: block;
       
      padding-top: 63px;
-      max-width: 48%;
+      max-width: 50%;
       
       filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.2)) ;
     }
@@ -579,20 +605,24 @@ background: linear-gradient(180deg,rgba(10, 10, 143, 1) 39%, rgba(19, 28, 99, 1)
       
       grid-area: destraCommento;
       
+      
     }
     .destraCommento p{
       border: 2px solid var(--footer-gray);
       border-radius: 5px;
       padding: 1%;
       margin: 20%;
+      margin-top: 1800px;
       color: var(--text-dark);
-      display: none;
+      display:none;
+      
     
     }
     /* componente che permette collegamento a margine della spiegazione della parola */
     .spiega{
       text-decoration: underline;
       color: var(--text-dark);
+     
       
     }
     .spiega:hover{
