@@ -12,12 +12,16 @@
     
   }body{
     background-color: var(--light-gray);
+    
   }
   .pagina{
   
     display: grid;
     grid-template-rows: 1fr auto;
     height: 100vh;
+  }
+  .apice{
+    color:var(--accent-red)
   }
  @media screen  and (max-width:767px) {
   
@@ -561,6 +565,7 @@ background: linear-gradient(180deg,rgba(10, 10, 143, 1) 39%, rgba(19, 28, 99, 1)
       
      padding-top: 63px;
       max-width: 50%;
+      
       
       filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.2)) ;
     }
