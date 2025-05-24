@@ -207,7 +207,7 @@
     width: 100%;  /* L'immagine copre il 100% della larghezza */
     max-height: 50vh;  /* Imposta l'altezza massima a metà finestra */
     object-fit: cover;  /* Mantiene l'immagine proporzionata senza distorsioni */
-    height: 40vh;
+    
     filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5)) brightness(60%) blur(1px); /* Aggiungi l'ombra all'immagine */
 }
 .img-sfondo .citazione {
