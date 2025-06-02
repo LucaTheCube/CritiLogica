@@ -1,0 +1,12 @@
+:root {
+    --primary-blue: #131c63;
+    --light-gray: #f4f4f4;
+    --accent-red: #B22222;
+    --text-dark: #333333;
+    --footer-gray: #555555;
+  }
+.pagina_testo p::first-letter{
+   font-size: 2em;
+   font-weight:400;
+   
+}

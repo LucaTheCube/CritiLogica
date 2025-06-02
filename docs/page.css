@@ -23,6 +23,8 @@
   .apice{
     color:var(--accent-red)
   }
+
+  
  @media screen  and (max-width:767px) {
   
  
@@ -162,11 +164,13 @@
     top: 60px;
     
   }
+  
   .contenuto img{
    padding-top: 60px;
     max-width: 100%;
     max-height: auto;
-    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.2)) ;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.2))   ;
+
   }
   .testo{  
     padding-left: 3%;
