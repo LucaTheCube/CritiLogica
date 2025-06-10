@@ -6,6 +6,7 @@
     <title>CritiLogica</title>
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="page.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -52,14 +53,24 @@
                     
                     <br /> <i>Ludwig Wittgenstein<i></blockquote>
             </div>
-          
-            <div class="articolo" ><img src="img/antonino-zichichi.jpg" width="100%" ><a class="titoletto" class="articolo" href="zichichi.html"><p class="titolettotesto" >Antonino Zichichi (Dio, Logos Eterno)</p></a></div>
-            <div class="articolo"><img src="img/Larussa.jpg" width="100%"><a class="titoletto" class="articolo" href="LaRussa.html"><p class="titolettotesto" >Ignazio La Russa ("Non sono antifascista")</p></a></div>
+           
+            
+            
+            <h1 class="fade-in">Articoli in evidenza...</h1>
+            <div class="articolo fade-in"><img src="img/vannacci.jpg" width="100%"><a class="titoletto" class="articolo" href="Vannacci.html"><p class="titolettotesto" >Roberto Vannacci ("Referendum delendum est")</p></a></div>
+            <div class="articolo fade-in" ><img src="img/antonino-zichichi.jpg" width="100%" ><a class="titoletto" class="articolo" href="zichichi.html"><p class="titolettotesto" >Antonino Zichichi (Dio, Logos Eterno)</p></a></div>
+            <div class="articolo fade-in"><img src="img/Larussa.jpg" width="100%"><a class="titoletto" class="articolo" href="LaRussa.html"><p class="titolettotesto" >Ignazio La Russa ("Non sono antifascista")</p></a></div>
+            
             
            
-           
+        <div class="lente "><button><a href="#search"  style="color: var(--light-gray);;">⌕</a></button></div> 
+        <p  class="barra fade-in">Utilizza questa barra per cercare velocemente i contenuti di questo sito</p>
+        <div id="search" class="search-container fade-in">
+        <input type="text" id="search-bar" placeholder="Cerca..." autocomplete="off">
+        <ul id="suggestions"></ul>
+</div>
         </div>
-        <footer>Contattaci: <br>
+        <footer >Contattaci: <br>
 
             Email:
             <br>
@@ -71,5 +82,7 @@
             <br>
             Seguici su Social Media:</footer>
     </div>
+    <script src="fadein.js"></script>
+    <script src="ricerca.js"></script>
 </body>
 </html>
