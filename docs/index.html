@@ -6,6 +6,7 @@
     <title>CritiLogica</title>
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="page.css">
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,16 +55,25 @@
                     <br /> <i>Ludwig Wittgenstein<i></blockquote>
             </div>
            
+                    <div class="lente "><button><a href="#search"  style="color: var(--light-gray);;">⌕</a></button></div> 
+
             
-            
-            <h1 class="fade-in">Articoli in evidenza...</h1>
-            <div class="articolo fade-in"><img src="img/vannacci.jpg" width="100%"><a class="titoletto" class="articolo" href="Vannacci.html"><p class="titolettotesto" >Roberto Vannacci ("Referendum delendum est")</p></a></div>
-            <div class="articolo fade-in" ><img src="img/antonino-zichichi.jpg" width="100%" ><a class="titoletto" class="articolo" href="zichichi.html"><p class="titolettotesto" >Antonino Zichichi (Dio, Logos Eterno)</p></a></div>
-            <div class="articolo fade-in"><img src="img/Larussa.jpg" width="100%"><a class="titoletto" class="articolo" href="LaRussa.html"><p class="titolettotesto" >Ignazio La Russa ("Non sono antifascista")</p></a></div>
-            
-            
+            <h1 style="text-align: center; color:#131c63;" class="fade-in">Benvenuto su CritiLogica</h1> <br>
+          <br>  <h2 class="fade-in" style="text-align: center; font-weight:400; max-width: 800px; margin: 0 auto; line-height:2;">CritiLogica offre analisi di discorsi pubblici fondate su rigorosi criteri di logica argomentativa.
+Lontano da letture ideologiche, il sito applica principi formali e strumenti analitici per valutare la coerenza e la validità delle argomentazioni. Oltre alle analisi, CritiLogica offre anche spiegazioni accessibili sui concetti fondamentali della logica, per fornire a chiunque gli strumenti per riconoscere fallacie, ragionamenti scorretti e manipolazioni retoriche, sviluppando così un pensiero critico più consapevole e autonomo.
+
+</h2> <br>
+            <h1 style="text-align: center; color:#131c63; padding-top:8% " class="fade-in">Articoli in evidenza</h1>
            
-        <div class="lente "><button><a href="#search"  style="color: var(--light-gray);;">⌕</a></button></div> 
+           <div   class="carosello-3d swiper-container fade-in">
+           <div class="swiper-wrapper">
+            <div   class="articolo fade-in swiper-slide"><img src="img/vannacci.jpg" width="100%" ><a class="titoletto" class="articolo" href="Vannacci.html"><p class="titolettotesto" >Roberto Vannacci ("Referendum delendum est")</p></a></div>
+            <div  class="articolo fade-in swiper-slide" ><img src="img/antonino-zichichi.jpg" width="100%" ><a class="titoletto" class="articolo" href="zichichi.html"><p class="titolettotesto" >Antonino Zichichi (Dio, Logos Eterno)</p></a></div>
+            <div  class="articolo fade-in swiper-slide"><img src="img/Larussa.jpg" width="100%"><a class="titoletto" class="articolo" href="LaRussa.html"><p class="titolettotesto" >Ignazio La Russa ("Non sono antifascista")</p></a></div>
+           </div>
+         </div>
+          <p class="fade-in"  style="text-align: center; padding-bottom:10%; font-weight:700">Scorri a destra o a sinistra </p>  <br><br>
+           
         <p  class="barra fade-in">Utilizza questa barra per cercare velocemente i contenuti di questo sito</p>
         <div id="search" class="search-container fade-in">
         <input type="text" id="search-bar" placeholder="Cerca..." autocomplete="off">
@@ -84,5 +94,22 @@
     </div>
     <script src="fadein.js"></script>
     <script src="ricerca.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      initialSlide: 1, 
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+    });
+  </script>
 </body>
 </html>
