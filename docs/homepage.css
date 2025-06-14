@@ -298,14 +298,7 @@
   overflow: hidden;
   
   white-space: normal;
-  width: 0;
-  animation: typing 2s steps(100) forwards, blink 0.5s step-end infinite alternate;
-}
-@keyframes typing {
-  from { width: 5%; }
-  to { width: 100%; }
-  from{height: 10%;}
-  to{height: 50%;}
+
 }
 
 
