@@ -79,12 +79,38 @@
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
+   
+
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .fade-in.show {
   opacity: 1;
   transform: translateY(0);
+ 
+
+}
+.fade-inc{
+    
+ opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+   filter: blur(5px);
+    transition:
+    opacity 1.5s ease 0s,
+    transform 1.5s ease 0s,
+    filter 1s ease 0.4s;
+}
+  
+
+.fade-inc.show{
+  opacity: 1;
+  transform: translateY(0);
+  
+
+  
+  filter: blur(0px);
+  
 }
  .articolo{
   position: relative;
@@ -172,29 +198,28 @@
     height: 40vh;
     filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5)) brightness(60%) blur(1px); /* Aggiungi l'ombra all'immagine */
 }
+
+  
+ 
+ 
+  
+ 
 .img-sfondo .citazione {
   
   position: absolute;
-  right: auto;
+  
+  left: 5%;
+  right: 5%;
   top: 80px;
-  font-size: 160%;
  
+ font-size: 160%;
   color: var(--light-gray);
   display: block;
   text-align: center;
   font-family: 'Merriweather', serif;
-  overflow: hidden;
-  overflow: hidden;
-  
   white-space: normal;
-  width: 0;
-  animation: typing 2s steps(100) forwards, blink 0.5s step-end infinite alternate;
-}
-@keyframes typing {
-  from { width: 5%; }
-  to { width: 100%; }
-  from{height: 10%;}
-  to{height: 50%;}
+  
+ 
 }
 
 
@@ -354,7 +379,9 @@
 .img-sfondo .citazione {
   
   position: absolute;
-  right: auto;
+  
+  left: 15%;
+  right: 15%;
   top: 80px;
   font-size: 250%;
  
@@ -362,18 +389,9 @@
   display: block;
   text-align: center;
   font-family: 'Merriweather', serif;
-  overflow: hidden;
-  overflow: hidden;
-  
   white-space: normal;
-  width: 0;
-  animation: typing 2s steps(100) forwards, blink 0.5s step-end infinite alternate;
-}
-@keyframes typing {
-  from { width: 5%; }
-  to { width: 100%; }
-  from{height: 10%;}
-  to{height: 50%;}
+
+
 }
 
 

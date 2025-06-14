@@ -1,6 +1,6 @@
 
   document.addEventListener("DOMContentLoaded", function () {
-    const faders = document.querySelectorAll('.fade-in');
+    const faders = document.querySelectorAll('.fade-in, .fade-inc');
 
     const appearOptions = {
       threshold: 0.1,
