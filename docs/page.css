@@ -47,6 +47,17 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+.crediti{
+  font-size: 0.8em;
+  text-align: center;
+  padding: 1%;
+  color: var(--text-dark);
+}
+.crediti a{
+  
+  color: var(--text-dark);
+}
  @media screen  and (max-width:767px) {
   
  
