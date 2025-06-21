@@ -58,6 +58,22 @@
   
   color: var(--text-dark);
 }
+.hero-symbols {
+
+  padding: 5rem 1rem 2rem;
+  text-align: center;
+  position: relative;
+}
+.symbols {
+  font-size: 2rem;
+  color: var(--footer-gray);
+  margin-bottom: 1rem;
+}
+.lezioni{
+  color: var(--primary-blue);
+ font-size: 1rem;
+}
+
  @media screen  and (max-width:767px) {
   
  
@@ -672,5 +688,15 @@ background: linear-gradient(180deg,rgba(10, 10, 143, 1) 39%, rgba(19, 28, 99, 1)
       cursor: pointer;
       
     }
+    .lezioni{
+     font-size:1.5vw;
+     
+     
+    }
+    .hero-symbols{
+      text-align: left;
+      left: 19.5%;
+    }
+    
    
   }
