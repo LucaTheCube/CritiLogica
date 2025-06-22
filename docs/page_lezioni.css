@@ -26,9 +26,14 @@ text-decoration: none;
     color: var(--primary-blue);
  }
  
-
+.esenote a{
+   color: var(--text-dark);
+}
  
- 
+ .esenote li{
+   margin-left: 2%;
+   
+ }
 
 @media screen  and (max-width:767px) {
 
