@@ -6,7 +6,8 @@ const articoli = [
   { titolo: "Imparare a dibattere", link: "impara.html" },
   { titolo: "Chi sono", link: "chisono.html" },
   { titolo: "Roberto Vannacci (\"Referendum delendum est\")", link: "Vannacci.html" },
-  { titolo: "Ad verecundiam", link: "ad verecundiam.html" }
+  { titolo: "Ad verecundiam", link: "ad verecundiam.html" },
+  { titolo: "Ad hominem", link: "ad hominem.html" }
 ];
 const input = document.getElementById("search-bar");
 const suggestions = document.getElementById("suggestions");
