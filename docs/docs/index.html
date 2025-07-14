@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CritiLogica</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="page.css">
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/log.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VW7VQTWDJK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VW7VQTWDJK');
+</script>
+</head>
+<body>
+    <div class="pagina">
+    <!-- Barra di ricerca e menù     -->
+        <header class="header">
+           
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+            <a href="index.html" class="logo">CritiLogica</a>
+           
+            <ul class="menu">
+                <li><a href="analisi.html" >Analisi degli argomenti</a></li>
+                <li><a href="logica.html" >Logica</a></li>
+                <li><a href="impara.html" >Imparare a dibattere</a></li>
+                <li><a href="articoli.html" >Articoli</a></li>
+                <li><a href="chisono.html" >Chi sono</a></li>
+                
+            </ul>
+           
+        </header>
+
+        
+        <div class="primopiano">
+            
+            <div class="img-sfondo">
+                
+                <img src="img/blu.jpg"  class="sfondo-img">
+                <blockquote class="citazione fade-inc">Lo scopo della filosofia è il rischiaramento logico dei pensieri
+                    
+                    <br /> <i>Ludwig Wittgenstein<i></blockquote>
+            </div>
+           
+                    <div class="lente "><button><a href="#search"  style="color: var(--light-gray);;">⌕</a></button></div> 
+
+            
+            <h1 style="text-align: center; color:#131c63;" class="fade-in">Ti diamo il benvenuto su CritiLogica</h1> <br>
+          <br>  <h2 class="fade-in" style="text-align: center; font-weight:400; max-width: 800px; margin: 0 auto; line-height:2;">CritiLogica offre analisi di discorsi pubblici fondate su rigorosi criteri di logica argomentativa.
+Lontano da letture ideologiche, il sito applica principi formali e strumenti analitici per valutare la coerenza e la validità delle argomentazioni. Oltre alle analisi, CritiLogica offre anche spiegazioni accessibili sui concetti fondamentali della logica, per fornire a chiunque gli strumenti per riconoscere fallacie, ragionamenti scorretti e manipolazioni retoriche, sviluppando così un pensiero critico più consapevole e autonomo.
+
+</h2> <br>
+            <h1 style="text-align: center; color:#131c63; padding-top:8% " class="fade-in">Pagine in evidenza</h1>
+           
+           <div   class="carosello-3d swiper-container fade-in">
+           <div class="swiper-wrapper">
+            <div   class="articolo fade-in swiper-slide"><img src="img/vannacci.jpg" width="100%" ><a class="titoletto "  href="Vannacci.html"><span class="titolettotesto" >Roberto Vannacci ("Referendum delendum est")</span></a></div>
+            <div  class="articolo fade-in swiper-slide" ><img src="img/antonino-zichichi.jpg" width="100%" ><a class="titoletto  "  href="zichichi.html"><span class="titolettotesto" >Antonino Zichichi (Dio, Logos Eterno)</span></a></div>
+            <div  class="articolo fade-in swiper-slide"><img src="img/Larussa.png" width="100%"><a class="titoletto "  href="LaRussa.html"><span class="titolettotesto" >Ignazio La Russa ("Non sono antifascista")</span></a></div>
+           </div>
+         </div>
+          <p class="fade-in"  style="text-align: center; padding-bottom:10%; font-weight:700">Scorri a destra o a sinistra </p>  <br><br>
+           
+        <p  class="barra fade-in">Utilizza questa barra per cercare velocemente i contenuti di questo sito</p>
+        <div id="search" class="search-container fade-in">
+        <input type="text" id="search-bar" placeholder="Cerca..." autocomplete="off">
+        <ul id="suggestions"></ul>
+</div>
+        </div>
+        <footer >Contattaci: <br>
+
+            Email:
+            <br>
+           /
+           <br>
+            Copyright © 2025 CritiLogica
+            <br>
+            Tutti i diritti riservati.
+            <br>
+            Seguici su Social Media:</footer>
+    </div>
+    <script src="fadein.js"></script>
+    <script src="ricerca.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      initialSlide: 1, 
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+    });
+  </script>
+  <script src="scroll.js"></script>
+</body>
+</html>
