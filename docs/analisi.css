@@ -5,7 +5,15 @@
     --text-dark: #333333;
     --footer-gray: #555555;
   }
-
+blockquote {
+     
+  border-left: 4px solid #888; 
+  padding-left: 1em;          
+  margin: 1.5em 0;
+  color: #333;
+  font-style: italic;
+  font-family: "Inter", sans-serif;
+}
 .elencoalf{
     font-size: 150%;
    
