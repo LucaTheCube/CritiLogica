@@ -18,12 +18,28 @@
 text-decoration: none;
     
   }
+  .tabella{
+    margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  }
+  .tabella, th, td {
+  border:1px solid black; 
+  text-align: center;
+  }
+  .tabella th, td{
+    align-items: center;
+  }
+  
   blockquote {
+    font-family: "Inter", sans-serif ;
   border-left: 4px solid #888; 
   padding-left: 1em;          
+    font-size: 1.25rem;
   margin: 1.5em 0;
   color: #333;
   font-style: italic;
+  line-height: 2.35rem;
   
 }
  .indice a{

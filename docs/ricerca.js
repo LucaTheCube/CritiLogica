@@ -10,6 +10,8 @@ const articoli = [
   { titolo: "Affermazione del conseguente", link: "affermazione del conseguente.html" },
   { titolo: "La tecnica del travisamento", link: "la tecnica del travisamento.html" },
   { titolo: "Falsa Causa", link: "falsa causa.html" },
+  { titolo: "Negazione dell'Antecedente", link: "negazione dell'antecedente.html" },
+  { titolo: "Implicazione", link: "implicazione.html" },
   { titolo: "Ad hominem", link: "ad hominem.html" }
 ];
 const input = document.getElementById("search-bar");

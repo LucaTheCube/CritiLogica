@@ -15,6 +15,20 @@
   
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #search-bar {
   width: 100%;
   padding: 8px;
@@ -145,7 +159,7 @@
     .swiper-slide {
       
       border-radius: 8px;
-     padding: 5px;
+     
      
       text-align: center;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -339,6 +353,7 @@
   margin: 50px auto;
   
 }
+
   .barra{
   padding: 2%;
   text-align: center;
@@ -396,8 +411,7 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    padding-top: 10%;
-    padding-bottom: 10%;
+   
     
   }
   .articolo img{
