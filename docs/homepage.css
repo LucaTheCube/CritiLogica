@@ -18,6 +18,65 @@
 
 
 
+.link{
+ color: #333333;
+ font-weight: 600;
+}
+.rubrica-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 10px;
+}
+
+.rubrica-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 15px;
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.rubrica-card:hover {
+  transform: translateY(-5px);
+}
+
+.rubrica-card h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #131c63;
+}
+
+.rubrica-card .commento {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+  margin-top: 8px;
+  color: #333;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border: 0;
+}
 
 
 

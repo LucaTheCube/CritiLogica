@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CritiLogica</title>
+    
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="page_lezioni.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/log.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VW7VQTWDJK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VW7VQTWDJK');
+</script>
+ <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body>
+    <div class="pagina">
+        <!-- Barra di ricerca e menù     -->
+            <header class="header">
+               
+                <input class="menu-btn" type="checkbox" id="menu-btn">
+                <label for="menu-btn" class="menu-icon">
+                    <span class="nav-icon"></span>
+                </label>
+                <a href="index.html" class="logo">CritiLogica</a>
+               
+                <ul class="menu">
+                <li><a href="analisi.html" >Analisi degli argomenti</a></li>
+                <li><a href="logica.html" >Logica</a></li>
+                <li><a href="impara.html" >Imparare a dibattere</a></li>
+                <li><a href="articoli.html" >Articoli</a></li>
+                <li><a href="chisono.html" >Chi sono</a></li>
+                    
+                </ul>
+               
+            </header>
+            <div class="lezioni">
+                <section class="hero-symbols">
+             <div class="symbols fade-in">¬ ∧ ∨ ⊃ ⊥ ⊢ ⇔ ∀ ∃</div>
+            <h1 class="fade-in">Connettivi e relazioni logiche – Concetto di Condizione</h1>
+</div>
+           
+            <div class="testo">
+                <div class="margine"></div>
+            <div class="pagina_titolo">
+                 
+                 <hr class="linea fade-in" style="border: 1px solid #555555;">
+            </div>
+            <div class="destra"></div>
+            <div class="margine"></div>
+            <div class="pagina_testo ">
+                 <u class="indice fade-in">
+                    <li><a href="#introduzione">Introduzione</a></li>
+                    <li><a href="#implicazionem">Implicazione materiale</a></li>
+                    <li><a href="#implicazionel">Implicazione logica</a></li>
+                    <li><a href="#implicazionep">Implicazione per definizione</a></li>
+                    <li><a href="#implicazionec">Implicazione causale</a></li>
+                   
+                    <li><a href="#note">Fonti Bibliografiche</a></li>
+                </u> 
+               <h1 id="introduzione " class="fade-in">Introduzione</h1> 
+                  <hr class=" fade-in" style="border: 1px solid #555555; margin-top:1%;"><br>
+                 <p class="fade-in">Il concetto di condizione è fondamentale in logica. Esso permette di comprendere le relazioni che rendono validi alcuni argomenti, esplica i nessi causali ed assume un ruolo fondamentale nelle dimostrazioni.</p>
+                 <br> <h1 class="fade-in"  id="implicazionem">Implicazione materiale</h1> 
+                  <hr class=" fade-in" style="border: 1px solid #555555; margin-top:1%;"><br>
+                     <p class="fade-in">L’implicazione materiale è un connettivo vero-funzionale per la relazione di implicazione (della quale abbiamo detto esserci differenti tipi). Questo tipo di relazione, in quanto connettivo, non riflette sul significato delle singole proposizioni e per questo viene anche definita implicazione debole, dal momento che “trasferita” nel linguaggio ordinario potrebbe dare luogo a quelli che vengono definiti “paradossi dell’implicazione materiale”. Questo significa che l’implicazione materiale non va interpretata come una rappresentazione diretta di una relazione reale, ma come un modo per simbolizzare in generale qualunque asserto condizionale. È importante specificarlo, per evitare di confonderla con relazioni di causalità o di necessità che richiedono un legame reale tra le proposizioni.
+                        <br><br> Ci si chiederà allora cosa si intenda per “implicazione materiale”. Ebbene, l’implicazione materiale significa solamente che <b>𝑝 → 𝑞</b> è vera se e solo se non avviene che <b>𝑝 </b>sia vera e <b>𝑞</b> falsa, cioè se e solo se <b>𝑝</b> è falsa o <b>𝑞</b> è vera. In simboli si ottiene:
+                     </p> <br>  <p class="fade-in">$$ p \to q \equiv \neg (p \land \neg q) \equiv \neg p \lor q $$</p> <br>
+                     <p class="fade-in">Da ciò consegue che l’unico caso in cui risulti che l’implicazione sia falsa è che <b>𝑝</b> sia vera ma <b>𝑞</b> falsa.
+Questa condizione è comune anche agli altri tipi di implicazione, come quella causale. Ad esempio: “Se tocco il fuoco, mi brucio”.
+Se <b>𝑝</b> è vera (“tocco il fuoco”) e  <b>𝑞</b>  è falsa (“non mi brucio”), allora l’implicazione è falsa. In tutti gli altri casi, l’implicazione risulta vera. Questo può essere riassunto nella seguente tavola di verità.
+        </p><br> <table style="width: 60%;" class="fade-in tabella">
+            <tr >
+                <th><b>𝑝</b></th>
+                <th><b>𝑞</b></th>
+                <th><b>𝑝∧¬𝑞</b></th>
+                <th><b>¬(𝑝∧¬𝑞)</b></th>
+                <th><b>𝑝→𝑞</b></th>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>V</td>
+                <td>F</td>
+                <td>V</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>F</td>
+                <td>V</td>
+                <td>F</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>V</td>
+                <td>F</td>
+                <td>V</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>F</td>
+                <td>F</td>
+                <td>V</td>
+                <td>V</td>
+            </tr>
+            
+        </table>
+        <br><p class="fade-in">Come si può vedere, un’implicazione materiale potrà risultare vera anche qualora non esista una relazione “reale” tra le proposizioni, soltanto perché non accade che <b>𝑝</b> sia vero e <b>𝑞</b> falso. Questa è l’origine da cui nasce l’apparente paradossalità dell’implicazione materiale. Nell’esempio di prima, l’asserto “mi brucio” può essere implicato da qualsiasi asserto, dal momento che l’unico caso in cui l’implicazione non sarebbe valida è quello in cui tocco il fuoco e non mi brucio. 
+Si è detto che la paradossalità è apparente perché questa viene risolta dal significato di implicazione materiale, che è puramente formale, cioè non tiene conto del significato delle proposizioni. Non si dovrà applicare dunque all’implicazione materiale il significato di “è implicato” nel senso di” è causato” oppure “perché è la sua definizione”. L’unico suo significato è: <b>𝑝</b> implica <b>𝑞</b> perché non avviene che <b>𝑞</b> sia falso e <b>𝑝</b> vero.
+Restano gli altri tipi di implicazione, che non sono però connettivi vero-funzionali, pertanto, richiedono una relazione di significato tra le proposizioni. Questi sono l’implicazione logica, per definizione, causale, decisionale. La differenza tra questi risale proprio nel modo in cui viene utilizzato l’asserto condizionale.
+</p>
+                 <br> <h1 class="fade-in"  id="implicazionel">Implicazione logica</h1> 
+                  <hr class=" fade-in" style="border: 1px solid #555555; margin-top:1%;"> <br>
+                   <p class="fade-in">L’implicazione logica è una relazione condizionale tale che, se p è vera, q deve necessariamente esserlo, non solo per definizione formale (come nell’implicazione materiale), ma anche per coerenza del contenuto. Non si tratta di verificare la verità fattuale delle premesse, ma di stabilire che la verità di p comporta inevitabilmente quella di q. La struttura sottesa può essere pensata come un “termine medio” concettuale che stabilisce la dipendenza logica tra le due proposizioni. Il termine medio garantisce che non vi sia contraddizione tra p e q qualora l’implicazione sia vera: se p è vera, q non può essere falsa senza violare la coerenza del sistema.
+Un esempio chiarirà i dubbi: <br><br></p><blockquote>
+Se tutti gli uomini sono mortali e Luca è un uomo, allora Luca è mortale. </blockquote><p class="fade-in"><br>
+È evidente che la verità del conseguente sia necessitata dall’eventuale verità dell’antecedente. Non è importante che la relazione sia realmente corretta, ma è fondamentale che la relazione renda necessaria la dipendenza della verità di q dalla verità di p. 
+L’esempio seguente prende in esame una relazione non reale, ma che realizza un’implicazione logica corretta. Se tutti gli aeroplani volano e Luca è un aeroplano, allora Luca vola. È evidente che Luca non sia un aeroplano realmente, ma l’implicazione porta necessariamente a quella conclusione nel momento in cui l’antecedente sia vero. Ma vero in questo caso non significa non corrispondente alla realtà, ma soltanto che, se si assume come vero l’antecedente, allora necessariamente il conseguente sarà vero.
+Per comprendere definitivamente la differenza tra implicazione materiale e logica, si propone il seguente esempio:<br><br></p><blockquote>
+Se 1+1=3, allora Luca vola. </blockquote><p class="fade-in"><br>È evidente che materialmente l’implicazione sia vera (non avviene che p sia vero e q falso), ma logicamente è un nonsenso: non vi è alcuna necessità logica tra antecedente e conseguente, non vi è coerenza né possibilità di contraddittorietà. 
+<br><br><b><em> N.B. Gli esempi sillogistici fatti non devono essere interpretati come esempio di deduzione, che richiede la verifica della verità delle singole proposizioni, ma sono atti soltanto all’esemplificazione di implicazione logica.</em></b>
+</p> 
+                       
+                      
+                    <br> <h1 class="fade-in" id="implicazionep">Implicazione per definizione</h1> 
+                  <hr class=" fade-in" style="border: 1px solid #555555; margin-top:1%;"><br>
+                     <p class="fade-in">
+                            L’implicazione per definizione è una relazione tale che la verità del conseguente deriva necessariamente dalla verità dell’antecedente, poiché il conseguente ne costituisce la definizione. Pertanto, la coerenza, cioè la ragione della validità dell’implicazione, è data, utilizzando l’espressione di prima, dalla forma tautologica del termine medio. Quindi se il termine che collega antecedente e conseguente è identico, cioè se la sua esplicazione come definizione è corretta, allora l’implicazione sarà vera.
+ Esempio: <br><br>Se questo poligono è un triangolo, allora ha tre angoli. <br><br>
+Ora un esempio di implicazione per definizione falsa: <br><br></p><blockquote>Se questo poligono è un triangolo, allora ha quattro angoli. </blockquote><p class="fade-in"><br>Il “termine medio” è differente: “che ha quattro angoli” non è la definizione di triangolo.
+
+                     </p>
+                    <br> <h1 class="fade-in" id="implicazionec">Implicazione causale</h1> 
+                  <hr class=" fade-in" style="border: 1px solid #555555; margin-top:1%;"><br>
+                     <p class="fade-in">
+                        L’implicazione causale è invece una relazione che non dipende né dalla forma logica né dalla definizione, ma dall’esperienza. Non vi è alcuna ragione formale che ne garantisca la validità: essa deriva unicamente dalla scoperta empirica del nesso tra antecedente e conseguente, in modo tale che non accada che si verifichi l’antecedente mentre il conseguente no.
+Esempio: <br><br></p><blockquote>Se immergo questa palla in acqua, allora essa riceverà una spinta dal basso verso l’alto pari al peso del volume di fluido spostato.</blockquote><p class="fade-in">
+<br>È chiaro che quella causale sia un’implicazione “meno forte” rispetto a quella logica e per definizione, in quanto la sua verità non può essere stabilita a priori, ma necessiterà sempre di una verifica empirica.
+Non è interesse dell’implicazione causale l’argomentazione del nesso di causalità, bensì l’asserimento di un legame causa-effetto tra un particolare antecedente ed un conseguente. Non si cerca di verificare la generalità dell’asserto, ma se empiricamente esso sia vero o falso. Esempio: <br><br> </p><blockquote> Se questo pezzo di cartina tornasole viene messo in quella soluzione, allora questo pezzo di cartina tornasole diventerà rosso.</blockquote><p class="fade-in"><p class="fade-in"> 
+<br>Non viene asserito che qualsiasi pezzo di cartina tornasole diventerà rosso, ma che, se <b> questo pezzo</b> viene messo in quella soluzione, allora <b> questo pezzo</b> diventerà rosso. L’unico caso per cui l’implicazione possa essere falsa è qualora accada che questo pezzo venga immerso nella soluzione e non diventi rosso.
+
+                     </p>
+                        
+                       
+                     
+                    <br> <h1 class="fade-in" id="note">Fonti Bibliografiche</h1> 
+                  <hr class=" fade-in" style="border: 1px solid #555555; margin-top:1%;"><br>
+                     
+                        <ul class="esenote fade-in">
+                            <li><p>Irving M. Copi, Carl Cohen, <em> Introduction to Logic</em></p></li>
+                            <li><p>Carlotta Paoli, <em> L’implicazione logica: aspetti matematici e didattici</em> <a href="https://thesis.unipd.it/retrieve/f4e0bc01-4f63-4382-8512-a402324e8f83/Paoli_Carlotta.pdf">(Tesi)</a></p></li>
+                            <li><p><a href="https://www.youmath.it/domande-a-risposte/view/6992-implicazione-matematica.html">Youmath.it</a></p></li>
+                            <li><p><a href="https://www.andreaminini.org/logica/implicazione-materiale">Andrea Minini.org</a></p></li>
+                        </ul>
+                     
+
+</div> 
+                      <div class="destraCommento" id="destraCommento" style="display: none;"><p id="commento"></p></div>
+                </div>
+                
+            <footer>Contattaci: <br>
+
+                Email:
+                <br>
+               /
+               <br>
+                Copyright © 2025 CritiLogica
+                <br>
+                Tutti i diritti riservati.
+                <br>
+                Seguici su Social Media:</footer>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="fadein.js"></script>
+        <script src="scroll.js"></script>
+</body>
+</html>
