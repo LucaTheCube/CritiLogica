@@ -64,6 +64,31 @@ text-decoration: none;
    
  }
 
+ .glossario {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.glossario li {
+  margin: 0;
+}
+
+.glossario a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.glossario a:hover {
+  background-color: #eee;
+}
+
 @media screen  and (max-width:767px) {
 
 .indice a{
