@@ -20,6 +20,10 @@
 
   gtag('config', 'G-VW7VQTWDJK');
 </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </head>
 <body>
     <div class="pagina">
@@ -45,7 +49,7 @@
             <div class="lezioni">
                 <section class="hero-symbols">
              <div class="symbols fade-in">¬ ∧ ∨ ⊃ ⊥ ⊢ ⇔ ∀ ∃</div>
-            <h1 class="fade-in">Utili - Glossario </h1>
+            <h1 class="fade-in">Glossario </h1>
 </div>
            
             <div class="testo">
@@ -96,9 +100,9 @@
 
                     <h1 id="c" class="fade-in">C</h1> 
                     <hr class="fade-in" style="border: 1px solid #555555; margin-top:1%;"><br>
-                    <ul>
-                    <li>C</li>
-                    <li>Conseguenza logica (&#8872;): Dato un insieme <b>Γ</b> di formule, <b>φ</b> si dice conseguenza logica delle formule in <b>Γ</b> se, per ogni valutazione &#119907;, &#119907⊨<b>Γ</b>⇒&#119907⊨<b>φ</b>, ossia se <b>φ</b> risulta vera ogniqualvolta lo siano le formule di <b>Γ</b>.</li>
+                    <ul class="fade-in">
+                    <li >C</li>
+                    <li><b>Conseguenza logica (&#8872;)</b>: Dato un insieme <b>Γ</b> di formule, <b>φ</b> si dice conseguenza logica delle formule in <b>Γ</b> se, per ogni <a  class="riferim" href="#valuta"> valutazione &#119907;</a>, <b>φ</b> risulta vera ogniqualvolta lo siano le formule di <b>Γ</b>. In simboli: $$\forall v,  ⟦\Gamma⟧_v=1 \Rightarrow ⟦\phi⟧_v=1 $$ Per approfondire vedi <a class="riferim" href="implicazione.html">Implicazione</a></li>
                     </ul>
                     <br>
 
@@ -113,6 +117,7 @@
                     <hr class="fade-in" style="border: 1px solid #555555; margin-top:1%;"><br>
                     <ul>
                     <li>E</li>
+                    <li><p><b><em>Ex falso (sequitur) quodlibet</em></b>: lett. "dal falso segue qualsiasi cosa", è un termine utilizzato per indicare che, a partire da premesse contraddittorie, si può dimostrare qualsiasi cosa. In simboli:$$\bot \Rightarrow \phi$$ Per approfondimenti vedi \</p></li>
                     </ul>
                     <br>
 
@@ -215,10 +220,11 @@
                     </ul>
                     <br>
 
-                    <h1 id="v" class="fade-in">V</h1> 
+                    <h1 id="valuta" id="v" class="fade-in">V</h1> 
                     <hr class="fade-in" style="border: 1px solid #555555; margin-top:1%;"><br>
-                    <ul>
-                    <li>V</li>
+                    <ul class="fade-in">
+                    <li></li>
+                    <li ><p id="valuta"><b>Valutazione atomica</b>: sia <b>AT</b> è l'insieme del proposizioni atomiche, si dice valutazione atomica una qualsiasi funzione $$v: AT \rightarrow \{1,0\}$$ tale che \(v(\bot)=0\) <br>Il concetto si estende a valutazione di verità, dove appunto si prendono in considerazione le formule ottenute da proposizioni atomiche. Chiaramente la valutazione di verità di una formula \(\phi\) dipenderà dalle valutazioni delle proposizioni che la compongono. Denotando con \(v\) una generica valutazione, si indica la valutazione della formula \(\phi\) rispetto a \(v\) come: $$⟦\phi⟧_v$$</p></li>
                     </ul>
                     <br>
 

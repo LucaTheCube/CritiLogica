@@ -88,6 +88,9 @@ text-decoration: none;
 .glossario a:hover {
   background-color: #eee;
 }
+.riferim{
+  color: var(--primary-blue);
+}
 
 @media screen  and (max-width:767px) {
 
@@ -97,6 +100,9 @@ text-decoration: none;
    
     font-size: large;
  
+ }
+ .pagina_testo li{
+  margin-left: 5%;
  }
 }
 

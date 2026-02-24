@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CritiLogica</title>
+    
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="esercizio.css">
+    <link rel="stylesheet" href="page_lezioni.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/log.png">
+<!-- Google tag (gtag.js) -->
+ <style>
+    .eserc a{
+        color:   #333333;;
+    }
+ </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VW7VQTWDJK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VW7VQTWDJK');
+</script>
+<script src="avvert.js"></script>
+</head>
+<body>
+    <div class="pagina">
+        <!-- Barra di ricerca e menù     -->
+            <header class="header">
+               
+                <input class="menu-btn" type="checkbox" id="menu-btn">
+                <label for="menu-btn" class="menu-icon">
+                    <span class="nav-icon"></span>
+                </label>
+                <a href="index.html" class="logo">CritiLogica</a>
+               
+                <ul class="menu">
+                <li><a href="analisi.html" >Analisi degli argomenti</a></li>
+                <li><a href="logica.html" >Logica</a></li>
+                <li><a href="impara.html" >Imparare a dibattere</a></li>
+                <li><a href="articoli.html" >Articoli</a></li>
+                <li><a href="chisono.html" >Chi sono</a></li>
+                    
+                </ul>
+               
+            </header>
+            <div class="lezioni">
+                <section class="hero-symbols">
+             <div style="text-align:center" class="symbols fade-in">¬ ∧ ∨ ⊃ ⊥ ⊢ ⇔ ∀ ∃</div>
+            <h1 class="fade-in" style="text-align: center;">Esercizio</h1>
+            <h3 class="fade-in" style="text-align: center;">Difficoltà: 1/3</h1>
+</div>
+           
+            <div class="testo">
+                <div class="margine"></div>
+            <div class="pagina_titolo">
+                 
+                 <hr class="linea fade-in" style="border: 1px solid #555555;">
+            </div>
+            <div class="destra"></div>
+            <div class="margine"></div>
+            <div class="pagina_testo ">
+               <ul class="fade-in exercise">
+                    <li><h2>1.</h2>
+                        <p>Risposta multipla<br><br>
+                            <div  class="multipla" data-correct="3">
+                                <label>
+                                    <input type="radio" name="risposta" value="1">
+                                    Risposta 1
+                                </label><br><br>
+                                <label>
+                                    <input type="radio" name="risposta" value="2">
+                                    Risposta 2
+                                </label><br><br>
+                                <label>
+                                    <input type="radio" name="risposta" value="3">
+                                    Risposta 3
+                                </label><br><br>
+                                <label>
+                                    <input type="radio" name="risposta" value="4">
+                                    Risposta 4
+                                </label><br><br>
+                            </div>
+                        </p>
+                    </li>
+                    <li><h2>2.</h2>
+                     <p>Risposta ad inserimento</p>
+                     <p class="tend">La risposta <select data-correct="1">
+                        <option value="1">opzione 1</option>
+                        <option value="2">opzione 2</option>
+                        <option value="3">opzione 3</option>
+                     </select></p>
+                    </li>
+                    <li><h2>3.</h2>
+                    <p>più risposte</p>
+                    <div class="checkbox" data-correct="2,3" >
+                        <label>
+                            <input type="checkbox" name="risposta" value="1">
+                            Risposta 1
+                        </label><br><br>
+                        <label>
+                            <input type="checkbox" name="risposta" value="2">
+                            Risposta 2
+                        </label><br><br>
+                        <label>
+                            <input type="checkbox" name="risposta" value="3">
+                            Risposta 3
+                        </label><br><br>
+                        <label>
+                            <input type="checkbox" name="risposta" value="4">
+                            Risposta 4
+                        </label>
+
+                    </div>
+                </li>
+               </ul>
+            <button onclick="verifica()">Verifica risposte</button>
+            <p id="result"></p>
+            </div> 
+                      <div class="destraCommento" id="destraCommento" style="display: none;"><p id="commento"></p></div>
+                </div>
+                
+            <footer>Contattaci: <br>
+
+                Email:
+                <br>
+               /
+               <br>
+                Copyright © 2025 CritiLogica
+                <br>
+                Tutti i diritti riservati.
+                <br>
+                Seguici su Social Media:</footer>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="fadein.js"></script>
+        <script src="scroll.js"></script>
+        <script src="verifica.js"></script>
+        
+</body>
+</html>

@@ -1,0 +1,29 @@
+.exercise{
+    list-style: none;
+}
+.exercise p{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.exercise .multipla{
+ margin-left: 4%;
+}
+.exercise .checkbox{
+     margin-left: 4%;
+}
+.exercise .tend{
+ margin-left: 4%;
+}
+select{
+ font-family: inherit;  
+ font-size: 1rem;
+}
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.wrong {
+    color: red;
+    font-weight: bold;
+}
