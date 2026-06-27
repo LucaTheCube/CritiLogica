@@ -266,6 +266,7 @@
   }
     /* componente che permette collegamento a margine della spiegazione della parola */
     .spiega{
+     
       text-decoration: underline;
       color: var(--text-dark);
       
@@ -692,6 +693,7 @@ background: linear-gradient(180deg,rgba(10, 10, 143, 1) 39%, rgba(19, 28, 99, 1)
     .spiega{
       text-decoration: underline;
       color: var(--text-dark);
+        
      
       
     }

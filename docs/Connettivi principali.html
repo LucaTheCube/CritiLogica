@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CritiLogica</title>
+    
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="page_lezioni.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/log.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VW7VQTWDJK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VW7VQTWDJK');
+</script>
+ 
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+<body>
+    <div class="pagina">
+        <!-- Barra di ricerca e menù     -->
+            <header class="header">
+               
+                <input class="menu-btn" type="checkbox" id="menu-btn">
+                <label for="menu-btn" class="menu-icon">
+                    <span class="nav-icon"></span>
+                </label>
+                <a href="index.html" class="logo">CritiLogica</a>
+               
+                <ul class="menu">
+                <li><a href="analisi.html" >Analisi degli argomenti</a></li>
+                <li><a href="logica.html" >Logica</a></li>
+                <li><a href="impara.html" >Imparare a dibattere</a></li>
+                <li><a href="articoli.html" >Articoli</a></li>
+                <li><a href="chisono.html" >Chi sono</a></li>
+                    
+                </ul>
+               
+            </header>
+            <div class="lezioni">
+                <section class="hero-symbols">
+             <div class="symbols fade-in">¬ ∧ ∨ ⊃ ⊥ ⊢ ⇔ ∀ ∃</div>
+            <h1 class="fade-in">Connettivi e relazioni logiche – Connettivi principali</h1>
+</div>
+           
+            <div class="testo">
+                <div class="margine"></div>
+            <div class="pagina_titolo">
+                 
+                 <hr class="linea fade-in" style="border: 1px solid #555555;">
+            </div>
+            <div class="destra"></div>
+            <div class="margine"></div>
+            <div class="pagina_testo ">
+                 <u class="indice fade-in">
+                    <li><a href="#introduzione">Introduzione</a></li>
+                    <li><a href="#congiunzione">Congiunzione</a></li>
+                    <li><a href="#nega">Negazione</a></li>
+                    <li><a href="#disgiunzione">Disgiunzione</a></li>
+                    <li><a href="#esempi">Esempi</a></li>
+                   
+                    <li><a href="#note">Fonti Bibliografiche</a></li>
+                </u> 
+               <h1 id="introduzione" class="fade-in">Introduzione</h1> 
+                  <hr class=" fade-in" style="border: 1px solid #555555; margin-top:1%;"><br>
+                 <p class="fade-in">Il linguaggio umano è spesso vago ed equivoco: l’ambiguità delle parole, l’uso di metafore, la costruzione stessa delle frasi rendono talvolta difficile, se non impossibile, analizzare rigorosamente gli argomenti che esso veicola. Questo rappresenta uno dei principali limiti della logica aristotelica. Per ovviare a questo problema, si è sviluppato un nuovo linguaggio artificiale che formalizzasse le relazioni tra asserti e la loro struttura, attraverso l'utilizzo di notazioni specifiche, cioè simboli, fatto che rende evidente l'attributo della logica moderna, che viene definita simbolica.
+ </p>
+                 <br> <h1 class="fade-in"  id="congiunzione">Congiunzione</h1> 
+                  <hr class=" fade-in" style="border: 1px solid #555555; margin-top:1%;"><br>
+                     <p class="fade-in">
+                        Corrispondente all'italiana 'e', la congiunzione è la relazione che intercorre tra asserti, detti congiunti, che devono valere contemporaneamente. A livello logico, si presenta dunque come connettivo vero-funzionale (associa dei valori di verità alla relazione tra gli asserti) ed è simbolizzato da "\(\wedge\)" o "\(\cdot\)". La congiunzione risulta vera solo quando lo siano entrambi gli asserti relazionati. È evidente dunque che la tavola di verità associata avrà solo una valutazione per cui risulti vero il composto.
+                         </p>
+                         <br> <table style="width: 20%;" class="fade-in tabella">
+            <tr >
+                <th><b>𝑝</b></th>
+                <th><b>𝑞</b></th>
+                <th><b>𝑝∧𝑞</b></th>  
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>V</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>F</td>
+                <td>F</td>
+                
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>V</td>
+                <td>F</td>
+                
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>F</td>
+                <td>F</td>
+                
+            </tr>
+            
+        </table>
+                 <br> <h1 class="fade-in"  id="nega">Negazione</h1> 
+                  <hr class=" fade-in" style="border: 1px solid #555555; margin-top:1%;"> <br>
+                   <p class="fade-in">La negazione è un connettivo unario (agisce sull'asserto, non mette in relazione più asserti come la congiunzione, che è binaria) che associa ad un asserto il valore di verità opposto. Pertanto, la negazione di un asserto vero risulterà falsa, mentre la negazione di un asserto falso risulterà vera. Il simbolo di negazione è "\(\sim\)" o "\(\neg\)". La tavola di verità associata è la seguente:
+                    <br> <table style="width: 20%;" class="fade-in tabella">
+            <tr >
+                <th><b>𝑝</b></th>
+                <th><b>\(\neg\)𝑝</b></th> 
+            </tr>
+            <tr>
+                <th>V</th>
+                <th>F</th>
+            </tr>
+            <tr>
+                <th>F</th>
+                <th>V</th>
+            </tr>
+            </table>
+</p> 
+                       
+                      
+                    <br> <h1 class="fade-in" id="disgiunzione">Disgiunzione</h1> 
+                  <hr class=" fade-in" style="border: 1px solid #555555; margin-top:1%;"><br>
+                     <p class="fade-in">
+                           Corrispondente all'italiano "o", la disgiunzione è una relazione che intercorre tra asserti per cui almeno uno dei due deve essere vero. Si noti l'uso di almeno, che evidenzia la natura "debole" della disgiunzione logica, in contrasto con quella esclusiva, spesso utilizzata nelle conversazioni quotidiane. A livello logico, si presenta come un connettivo vero-funzionale e si indica con "\(\lor\)". La disgiunzione risulta falsa solo quando sono falsi entrambi gli asserti. La tavola di verità è la seguente:
+                           <table style="width: 20%;" class="fade-in tabella">
+            <tr >
+                <th><b>𝑝</b></th>
+                <th><b>𝑞</b></th>
+                <th><b>𝑝 ∨ 𝑞</b></th>  
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>V</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>F</td>
+                <td>V</td>
+                
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>V</td>
+                <td>V</td>
+                
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>F</td>
+                <td>F</td>
+                
+            </tr>
+            
+        </table>
+                    <br> <h1 class="fade-in" id="esempi">Esempi</h1> 
+                  <hr class=" fade-in" style="border: 1px solid #555555; margin-top:1%;"><br>
+                     <p class="fade-in">
+                        Per riassumere ciò che si è trattato, si riportano degli esempi di frasi in linguaggio comune e la loro formalizzazione logica. 
+                       <table style="width: 100%;" class="fade-in tabella">
+        <thead>
+            <tr>
+                <th>Enunciato nel Linguaggio Naturale</th>
+                <th>Forma Logica</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>"Il testimone è attendibile e le prove sono schiaccianti."</td>
+                <td>\(A \wedge P\)</td>
+            </tr>
+            <tr>
+                <td>"Il colpevole è il maggiordomo oppure la vittima ha mentito."</td>
+                <td>\(M \lor V\)</td>
+            </tr>
+            <tr>
+                <td>"Non si dà il caso che il sospettato fosse in casa."</td>
+                <td>\(\neg S\)</td>
+            </tr>
+            <tr>
+                <td>O sei d'accordo, o non hai capito e non sei attento."</td>
+                <td>\(D \lor (\neg C \wedge \neg A)\)</td>
+            </tr>
+        </tbody>
+    </table>
+    <b style="font-size: 70%; line-height:0.5;">N.B. Solitamente quando si ha a che fare con molti asserti, si suole utilizzare come simbolo per indicare la singola proposizione una lettera indicativa del significante (es. il testimone è attendibile, si associa A di attendibile)</b>
+    
+                     </p>
+                        
+                       
+                     
+                    <br> <h1 class="fade-in" id="note">Fonti Bibliografiche</h1> 
+                  <hr class=" fade-in" style="border: 1px solid #555555; margin-top:1%;"><br>
+                     
+                        <ul class="esenote fade-in">
+                            <li><p>Irving M. Copi, Carl Cohen, <em> Introduction to Logic</em></p></li>
+                            <li><p>Andrea Masini, <em> Logica Simbolica</em></p></li>
+                        
+                        </ul>
+                     
+
+</div> 
+                      <div class="destraCommento" id="destraCommento" style="display: none;"><p id="commento"></p></div>
+                </div>
+                
+            <footer>Contattaci: <br>
+
+                Email:
+                <br>
+               /
+               <br>
+                Copyright © 2025 CritiLogica
+                <br>
+                Tutti i diritti riservati.
+                <br>
+                Seguici su Social Media:</footer>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="fadein.js"></script>
+        <script src="scroll.js"></script>
+</body>
+</html>

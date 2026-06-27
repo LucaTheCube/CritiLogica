@@ -13,7 +13,8 @@ const articoli = [
   { titolo: "Negazione dell'Antecedente", link: "negazione dell'antecedente.html" },
   { titolo: "Implicazione", link: "implicazione.html" },
   { titolo: "Rubrica delle Fallacie", link: "rubrica.html" },
-  { titolo: "Ad hominem", link: "ad hominem.html" }
+  { titolo: "Ad hominem", link: "ad hominem.html" },
+  { titolo: "Connettivi", link: "Connettivi principali.html" }
 ];
 const input = document.getElementById("search-bar");
 const suggestions = document.getElementById("suggestions");

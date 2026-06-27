@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CritiLogica</title>
+    
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="page_lezioni.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/log.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VW7VQTWDJK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VW7VQTWDJK');
+</script>
+</head>
+<body>
+    <div class="pagina">
+        <!-- Barra di ricerca e menù     -->
+            <header class="header">
+               
+                <input class="menu-btn" type="checkbox" id="menu-btn">
+                <label for="menu-btn" class="menu-icon">
+                    <span class="nav-icon"></span>
+                </label>
+                <a href="index.html" class="logo">CritiLogica</a>
+               
+                <ul class="menu">
+                <li><a href="analisi.html" >Analisi degli argomenti</a></li>
+                <li><a href="logica.html" >Logica</a></li>
+                <li><a href="impara.html" >Imparare a dibattere</a></li>
+                <li><a href="articoli.html" >Articoli</a></li>
+                <li><a href="chisono.html" >Chi sono</a></li>
+                    
+                </ul>
+               
+            </header>
+            <div class="lezioni">
+                <section class="hero-symbols">
+             <div class="symbols fade-in">¬ ∧ ∨ ⊃ ⊥ ⊢ ⇔ ∀ ∃</div>
+            <h1 class="fade-in">Introduzione alla Logica / Cosa è la logica? </h1>
+</div>
+           
+            <div class="testo">
+                <div class="margine"></div>
+            <div class="pagina_titolo">
+                 
+                 <hr class="linea fade-in" style="border: 1px solid #555555;">
+            </div>
+            <div class="destra"></div>
+            <div class="margine"></div>
+            <div class="pagina_testo ">
+                 <u class="indice fade-in">
+                    <li><a href="#introduzione">Logica</a></li>
+                    <li><a href="#sistemi">Sistemi logici</a></li>
+                  
+                </u> 
+               <h1 id="introduzione" class="fade-in">Logica</h1> 
+                  <hr class=" fade-in" style="border: 1px solid #555555; margin-top:1%;"><br>
+                 <p class=" fade-in">La logica è la disciplina che studia i principi e i metodi attraverso cui è possibile analizzare e valutare la correttezza dei ragionamenti. Esistono diversi tipi di logica, spesso sviluppati con obiettivi e strumenti differenti. In questo sito ci si riferisce principalmente alla logica classica, che si fonda sull’idea che ogni proposizione sia o vera o falsa (principio di bivalenza) e su una concezione rigorosa della validità del ragionamento.
+                <br> È bene precisare che la stessa logica classica al suo interno contiene approcci differenti, legati alle varie fasi del suo sviluppo storico. Tra le tappe principali si possono individuare la logica aristotelica e la logica simbolica. La logica aristotelica rappresenta il primo tentativo sistematico di analizzare il ragionamento. Essa si basa sul linguaggio naturale e cerca di chiarirne le strutture, affrontando inevitabilmente anche le ambiguità che esso comporta. La logica simbolica, sviluppatasi a partire dall’Ottocento, introduce invece un metodo di analisi più rigoroso: il linguaggio naturale viene progressivamente sostituito da un linguaggio formale, in cui concetti e relazioni logiche sono espressi tramite simboli e regole precise, con l’obiettivo di eliminare le ambiguità. <br>
+                Sarebbe scorretto tuttavia pensare alla logica aristotelica come errata.I suoi concetti fondamentali costituiscono ancora oggi una base importante per gli sviluppi successivi. Più che di errore, si tratta di un diverso livello di formalizzazione: Aristotele operava in un contesto in cui la disciplina era ancora agli inizi, mentre la logica simbolica nasce anche dall’esigenza di affrontare problemi più complessi, legati in particolare allo sviluppo della matematica e dell’informatica.<br>
+                 Un'ulteriore distinzione è quella dei sistemi logici: all'interno di una logica (come quella aristotelica o quella simbolica) troviamo degli ambiti di studio particolari, cioè che si interessano di una particolare forma di ragionamento. Tra i principali troviamo la logica proposizionale, che considera le proposizioni come unità fondamentali (o “atomi”), e la logica del primo ordine, che analizza la struttura interna delle proposizioni introducendo strumenti come i quantificatori, permettendo così un livello di analisi più profondo.
+                </p>
+                    <br> <h1 class="fade-in" id="sistemi">Sistemi logici</h1> 
+                  <hr class=" fade-in" style="border: 1px solid #555555; margin-top:1%;"><br>
+                     <p class=" fade-in">Ogni sistema logico si basa su tre pilastri: sintassi, semantica e sistemi deduttivi.
+                        <br><br>
+                        La <b>sintassi</b> definisce come si costruiscono correttamente le formule logiche. In altre parole, indica le regole per rappresentarle. Per chiarire il concetto, si fornisce un esempio intuitivo: il simbolo "+" è definito quando mette in relazione due valori, pertanto risulta sintatticamente corretto "2+2", mentre non lo è "+2", perché come regola abbiamo imposto che debba mettere in relazione due valori.
+                        <br><br>
+                        La <b>semantica</b> assegna un significato alle formule e determina formalmente sotto quali condizioni è da considerarsi vera o falsa. Si badi al fatto che vero o falso non si riferiscono alla natura delle formule, cioè se siano <b>realmente</b> vere, ma al valore di verità che assumono a seconda della loro interpretazione. In sintesi, mentre la sintassi stabilisce come costruire le formule, la semantica determina come valutarle.
+                        <br><br>
+                        I <b>sistemi deduttivi</b> sono gli strumenti per manipolare le formule e costruire quelle che si chiamano derivazioni. Essi permettono di costruire derivazioni, cioè sequenze di formule in cui ogni passaggio è giustificato da regole formali. In questo modo si ottengono conclusioni che seguono necessariamente da determinate premesse, secondo le regole del sistema.
+                     </p> 
+                    
+                    <br> <h1  class="fade-in" id="prop">Logica Proposizionale</h1> 
+                  <hr class=" fade-in" style="border: 1px solid #555555; margin-top:1%;"><br>
+                    <p class="fade-in">Come accennato in precedenza, questo sito tratta principalmente la logica proposizionale, pertanto si è ritenuto utile e necessario caratterizzare questo sistema logico.
+                    Gli elementi costitutivi (gli "atomi") della logica proposizionale sono appunto le proposizioni o asserti. La sua sintassi si basa pertanto su come costruire composizioni di asserti. Ad esempio, le regole sintattiche di questo sistema ci dicono che il simbolo di <a style="color: #131c63;" href="Connettivi principali.html">congiunzione</a> connette sempre due elementi, non avrà senso pertanto scriverlo e accompagnarlo da un solo asserto.</p>
+                    </div> 
+                      <div class="destraCommento" id="destraCommento" style="display: none;"><p id="commento"></p></div>
+                </div>
+                
+            <footer>Contattaci: <br>
+
+                Email:
+                <br>
+               /
+               <br>
+                Copyright © 2025 CritiLogica
+                <br>
+                Tutti i diritti riservati.
+                <br>
+                Seguici su Social Media:</footer>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="fadein.js"></script>
+        <script src="scroll.js"></script>
+</body>
+</html>
