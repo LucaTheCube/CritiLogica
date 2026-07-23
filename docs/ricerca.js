@@ -14,6 +14,7 @@ const articoli = [
   { titolo: "Implicazione", link: "implicazione.html" },
   { titolo: "Rubrica delle Fallacie", link: "rubrica.html" },
   { titolo: "Ad hominem", link: "ad hominem.html" },
+  { titolo: "Cosa è la logica?", link: "introdu_logica.html" },
   { titolo: "Connettivi", link: "Connettivi principali.html" }
 ];
 const input = document.getElementById("search-bar");
